@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201976AB2178E2EA00545C94 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976AA2178E2EA00545C94 /* UIImage.swift */; };
 		20B70D522178DD90006500CB /* DayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B70D512178DD90006500CB /* DayViewViewModel.swift */; };
 		CC08B9DB1DA206EE00754A85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */; };
 		CC08B9DE1DA20DB400754A85 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		201976AA2178E2EA00545C94 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		20B70D512178DD90006500CB /* DayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewViewModel.swift; sourceTree = "<group>"; };
 		CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				CC08B9E21DA2208800754A85 /* Conversions.swift */,
 				CC08B9E01DA2169400754A85 /* UserDefaults.swift */,
+				201976AA2178E2EA00545C94 /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				CC83E0DE1F13BFD300EB0CAC /* LocationTableViewCell.swift in Sources */,
 				CC83E0DB1F13BFAB00EB0CAC /* LocationsViewLocationViewModel.swift in Sources */,
 				CC89B4401D9FE5BC006BFD6E /* DayViewController.swift in Sources */,
+				201976AB2178E2EA00545C94 /* UIImage.swift in Sources */,
 				CC08B9E11DA2169400754A85 /* UserDefaults.swift in Sources */,
 				CC83E0D81F13BF8000EB0CAC /* LocationRepresentable.swift in Sources */,
 				CC08B9DB1DA206EE00754A85 /* SettingsViewController.swift in Sources */,
