@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		201976AB2178E2EA00545C94 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976AA2178E2EA00545C94 /* UIImage.swift */; };
+		201976AD2179E55900545C94 /* WeekViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976AC2179E55900545C94 /* WeekViewViewModel.swift */; };
 		20B70D522178DD90006500CB /* DayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B70D512178DD90006500CB /* DayViewViewModel.swift */; };
 		CC08B9DB1DA206EE00754A85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */; };
 		CC08B9DE1DA20DB400754A85 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		201976AA2178E2EA00545C94 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		201976AC2179E55900545C94 /* WeekViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewViewModel.swift; sourceTree = "<group>"; };
 		20B70D512178DD90006500CB /* DayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewViewModel.swift; sourceTree = "<group>"; };
 		CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				20B70D512178DD90006500CB /* DayViewViewModel.swift */,
+				201976AC2179E55900545C94 /* WeekViewViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				CC7854CD1D9FF99700E7836D /* WeatherViewController.swift in Sources */,
 				CC83E0D51F13BF3B00EB0CAC /* LocationsViewController.swift in Sources */,
 				20B70D522178DD90006500CB /* DayViewViewModel.swift in Sources */,
+				201976AD2179E55900545C94 /* WeekViewViewModel.swift in Sources */,
 				CC89B4391D9FE3D0006BFD6E /* RootViewController.swift in Sources */,
 				CC89B44C1D9FEB73006BFD6E /* JSONDecodable.swift in Sources */,
 				CC89B4451D9FE897006BFD6E /* DataManager.swift in Sources */,
