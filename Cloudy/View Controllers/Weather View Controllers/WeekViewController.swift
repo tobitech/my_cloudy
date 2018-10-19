@@ -113,14 +113,9 @@ extension WeekViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: WeatherDayTableViewCell.reuseIdentifier, for: indexPath) as? WeatherDayTableViewCell else { fatalError("Unexpected Table View Cell") }
 
-        if let viewModel = viewModel {
-
+        if let viewModel = viewModel?.viewModel(for: indexPath.row) {
             // Configure Cell
-            cell.dayLabel.text = viewModel.day(for: indexPath.row)
-            cell.dateLabel.text = viewModel.date(for: indexPath.row)
-            cell.temperatureLabel.text = viewModel.temperature(for: indexPath.row)
-            cell.windSpeedLabel.text = viewModel.windSpeed(for: indexPath.row)
-            cell.iconImageView.image = viewModel.image(for: indexPath.row)
+            cell.config(withViewModel: viewModel)
         }
 
         return cell
