@@ -15,6 +15,9 @@
 		201976B72179F23300545C94 /* SettingsRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976B62179F23300545C94 /* SettingsRepresentable.swift */; };
 		201976B9217A1D1B00545C94 /* WeatherDayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976B8217A1D1B00545C94 /* WeatherDayViewViewModel.swift */; };
 		201976BC217A1EFD00545C94 /* WeatherDayRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976BB217A1EFD00545C94 /* WeatherDayRepresentable.swift */; };
+		201976D0217A24C000545C94 /* SettingsViewTimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976CF217A24C000545C94 /* SettingsViewTimeViewModelTests.swift */; };
+		201976D2217A2C0500545C94 /* SettingsViewTemperatureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976D1217A2C0500545C94 /* SettingsViewTemperatureViewModelTests.swift */; };
+		201976D4217A2EB000545C94 /* SettingsViewUnitsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976D3217A2EB000545C94 /* SettingsViewUnitsViewModelTests.swift */; };
 		20B70D522178DD90006500CB /* DayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B70D512178DD90006500CB /* DayViewViewModel.swift */; };
 		CC08B9DB1DA206EE00754A85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */; };
 		CC08B9DE1DA20DB400754A85 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */; };
@@ -63,6 +66,9 @@
 		201976BB217A1EFD00545C94 /* WeatherDayRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayRepresentable.swift; sourceTree = "<group>"; };
 		201976C1217A223E00545C94 /* CloudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		201976C5217A223E00545C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201976CF217A24C000545C94 /* SettingsViewTimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTimeViewModelTests.swift; sourceTree = "<group>"; };
+		201976D1217A2C0500545C94 /* SettingsViewTemperatureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModelTests.swift; sourceTree = "<group>"; };
+		201976D3217A2EB000545C94 /* SettingsViewUnitsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModelTests.swift; sourceTree = "<group>"; };
 		20B70D512178DD90006500CB /* DayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewViewModel.swift; sourceTree = "<group>"; };
 		CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -113,8 +119,8 @@
 		201976AE2179EC5300545C94 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				201976B12179EE7C00545C94 /* SettingsViewUnitsViewModel.swift */,
 				201976AF2179EC8500545C94 /* SettingsViewTimeViewModel.swift */,
+				201976B12179EE7C00545C94 /* SettingsViewUnitsViewModel.swift */,
 				201976B32179F02100545C94 /* SettingsViewTemperatureViewModel.swift */,
 			);
 			path = "View Models";
@@ -172,6 +178,9 @@
 		201976CE217A228F00545C94 /* Test Cases */ = {
 			isa = PBXGroup;
 			children = (
+				201976CF217A24C000545C94 /* SettingsViewTimeViewModelTests.swift */,
+				201976D1217A2C0500545C94 /* SettingsViewTemperatureViewModelTests.swift */,
+				201976D3217A2EB000545C94 /* SettingsViewUnitsViewModelTests.swift */,
 			);
 			path = "Test Cases";
 			sourceTree = "<group>";
@@ -452,6 +461,7 @@
 					201976C0217A223E00545C94 = {
 						CreatedOnToolsVersion = 10.0;
 						DevelopmentTeam = 978YYWA6NH;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CC89B4161D9FE314006BFD6E;
 					};
@@ -506,6 +516,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201976D4217A2EB000545C94 /* SettingsViewUnitsViewModelTests.swift in Sources */,
+				201976D0217A24C000545C94 /* SettingsViewTimeViewModelTests.swift in Sources */,
+				201976D2217A2C0500545C94 /* SettingsViewTemperatureViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +576,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -576,6 +590,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tobiomotayo.CloudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloudy.app/Cloudy";
@@ -588,6 +603,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
