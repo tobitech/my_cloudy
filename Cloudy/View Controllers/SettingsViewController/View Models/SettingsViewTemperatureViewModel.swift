@@ -30,3 +30,7 @@ struct SettingsViewTemperatureViewModel {
     }
     
 }
+
+extension SettingsViewTemperatureViewModel: SettingsRepresentable {
+    
+}

@@ -12,6 +12,7 @@
 		201976B02179EC8500545C94 /* SettingsViewTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976AF2179EC8500545C94 /* SettingsViewTimeViewModel.swift */; };
 		201976B22179EE7C00545C94 /* SettingsViewUnitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976B12179EE7C00545C94 /* SettingsViewUnitsViewModel.swift */; };
 		201976B42179F02100545C94 /* SettingsViewTemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976B32179F02100545C94 /* SettingsViewTemperatureViewModel.swift */; };
+		201976B72179F23300545C94 /* SettingsRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976B62179F23300545C94 /* SettingsRepresentable.swift */; };
 		20B70D522178DD90006500CB /* DayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B70D512178DD90006500CB /* DayViewViewModel.swift */; };
 		CC08B9DB1DA206EE00754A85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */; };
 		CC08B9DE1DA20DB400754A85 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */; };
@@ -45,6 +46,7 @@
 		201976AF2179EC8500545C94 /* SettingsViewTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTimeViewModel.swift; sourceTree = "<group>"; };
 		201976B12179EE7C00545C94 /* SettingsViewUnitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModel.swift; sourceTree = "<group>"; };
 		201976B32179F02100545C94 /* SettingsViewTemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModel.swift; sourceTree = "<group>"; };
+		201976B62179F23300545C94 /* SettingsRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepresentable.swift; sourceTree = "<group>"; };
 		20B70D512178DD90006500CB /* DayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewViewModel.swift; sourceTree = "<group>"; };
 		CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
+		201976B52179F20B00545C94 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				201976B62179F23300545C94 /* SettingsRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		20B70D502178DD6F006500CB /* View Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */,
+				201976B52179F20B00545C94 /* Protocols */,
 				201976AE2179EC5300545C94 /* View Models */,
 				CC08B9DC1DA20D8D00754A85 /* Table View Cells */,
 			);
@@ -403,6 +414,7 @@
 				CC08B9DE1DA20DB400754A85 /* SettingsTableViewCell.swift in Sources */,
 				201976B02179EC8500545C94 /* SettingsViewTimeViewModel.swift in Sources */,
 				CC89B4381D9FE3D0006BFD6E /* AppDelegate.swift in Sources */,
+				201976B72179F23300545C94 /* SettingsRepresentable.swift in Sources */,
 				CC89B4521D9FECBE006BFD6E /* WeatherDayData.swift in Sources */,
 				CC89B4421D9FE5C6006BFD6E /* WeekViewController.swift in Sources */,
 				CC89B4501D9FEC2E006BFD6E /* WeatherData.swift in Sources */,
