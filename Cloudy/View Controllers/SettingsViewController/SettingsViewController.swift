@@ -109,8 +109,7 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         
         if let viewModel = viewModel {
             // Configure cell
-            cell.mainLabel.text = viewModel.text
-            cell.accessoryType = viewModel.accessoryType
+            cell.configure(withViewModel: viewModel)
         }
 
         return cell
