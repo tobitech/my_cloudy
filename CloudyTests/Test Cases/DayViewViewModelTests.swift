@@ -37,7 +37,7 @@ class DayViewViewModelTests: XCTestCase {
         UserDefaults.standard.removeObject(forKey: UserDefaultsKeys.timeNotation)
     }
     
-    // MARK: - Tests for Temperature
+    // MARK: - Tests for Date
     
     func testDate() {
         XCTAssertEqual(viewModel.date, "Tue, July, 11")
@@ -100,7 +100,7 @@ class DayViewViewModelTests: XCTestCase {
         
     }
     
-    func testTemperature_Metric() {
+    func testTemperature_Celsius() {
         let temperatureNotation: TemperatureNotation = .celsius
         
         UserDefaults.standard.set(temperatureNotation.rawValue, forKey: UserDefaultsKeys.temperatureNotation)
