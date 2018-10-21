@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 protocol AddLocationViewControllerDelegate {
     func controller(_ controller: AddLocationViewController, didAddLocation location: Location)
@@ -25,6 +27,8 @@ class AddLocationViewController: UIViewController {
     // MARK: -
 
     var delegate: AddLocationViewControllerDelegate?
+    
+    var disposeBag = DisposeBag()
 
     // MARK: - View Life Cycle
 
@@ -33,20 +37,30 @@ class AddLocationViewController: UIViewController {
 
         title = "Add Location"
         
-        viewModel = AddLocationViewViewModel()
+        // Initialize View Model
+        viewModel = AddLocationViewViewModel(query: searchBar.rx.text.orEmpty.asDriver())
         
-        viewModel.locationsDidChanged = { [unowned self] (locations) in
-            self.tableView.reloadData()
-        }
+        viewModel.locations
+            .drive(onNext: {[unowned self] (_) in
+                self.tableView.reloadData()
+            })
+            .disposed(by: disposeBag)
         
-        viewModel.queryingDidChanged = {[unowned self] (querying) in
-            if querying {
-                self.activityIndicatorView.startAnimating()
-            } else {
-                self.activityIndicatorView.stopAnimating()
-            }
-        }
+        viewModel.querying.drive(activityIndicatorView.rx.isAnimating).disposed(by: disposeBag)
         
+        searchBar.rx.searchButtonClicked
+            .asDriver(onErrorJustReturn: ())
+            .drive(onNext: {[unowned self] in
+                self.searchBar.resignFirstResponder()
+            })
+            .disposed(by: disposeBag)
+        
+        searchBar.rx.cancelButtonClicked
+            .asDriver(onErrorJustReturn: ())
+            .drive(onNext: {[unowned self] in
+                self.searchBar.resignFirstResponder()
+            })
+            .disposed(by: disposeBag)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -103,19 +117,4 @@ extension AddLocationViewController: UITableViewDelegate {
 }
 
 extension AddLocationViewController: UISearchBarDelegate {
-
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        // Hide Keyboard
-        searchBar.resignFirstResponder()
-
-        viewModel.query = searchBar.text ?? ""
-    }
-
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        // Hide Keyboard
-        searchBar.resignFirstResponder()
-
-        viewModel.query = searchBar.text ?? ""
-    }
-
 }
