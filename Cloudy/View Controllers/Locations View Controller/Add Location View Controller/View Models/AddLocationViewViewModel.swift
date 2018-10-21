@@ -9,7 +9,6 @@
 import RxSwift
 import RxCocoa
 import UIKit
-import CoreLocation
 
 class AddLocationViewViewModel {
     
@@ -31,11 +30,13 @@ class AddLocationViewViewModel {
     
     // MARK: -
     
-    private lazy var geocoder = CLGeocoder()
+    private let locationService: LocationService
     
     private let disposeBag = DisposeBag()
     
-    init(query: Driver<String>) {
+    init(query: Driver<String>, locationService: LocationService) {
+        self.locationService = locationService
+        
         query
             .throttle(0.5)
             .distinctUntilChanged()
@@ -65,22 +66,15 @@ class AddLocationViewViewModel {
         
         _querying.accept(true)
         
-        geocoder.geocodeAddressString(addressString) {[weak self] (placemarks, error) in
-            var locations: [Location] = []
-            
+        // Geocode address string
+        locationService.geocode(addressString: addressString) {[weak self] (locations, error) in
             self?._querying.accept(false)
+            self?._locations.accept(locations)
             
             if let error = error {
-                print("Unable to Forward Geocode Address (\(error)")
-            } else if let _placemarks = placemarks {
-                locations = _placemarks.compactMap({ (placemark) -> Location? in
-                    guard let name = placemark.name else { return nil }
-                    guard let location = placemark.location else { return nil }
-                    return Location(name: name, latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-                })
+                print("Unable to forward Geocode address (\(error)")
             }
             
-            self?._locations.accept(locations)
         }
         
     }
