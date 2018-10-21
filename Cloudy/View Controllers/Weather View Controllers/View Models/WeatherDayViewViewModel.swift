@@ -18,7 +18,7 @@ struct WeatherDayViewViewModel {
     // MARK: -
     
     var day: String {
-        dateFormatter.dateFormat = "EEEE"
+        dayFormatter.dateFormat = "EEEE"
         return dayFormatter.string(from: weatherDayData.time)
     }
     
