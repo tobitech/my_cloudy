@@ -6,45 +6,50 @@
 //  Copyright © 2018 Cocoacasts. All rights reserved.
 //
 
+import RxSwift
+import RxCocoa
 import UIKit
 import CoreLocation
 
 class AddLocationViewViewModel {
     
-    var query: String = "" {
-        didSet {
-            geocode(addressString: query)
-        }
-    }
-    
-    var queryingDidChanged: ((Bool) -> ())?
-    var locationsDidChanged: (([Location]) -> ())?
-    
-    private var querying: Bool = false {
-        didSet {
-            queryingDidChanged?(querying)
-        }
-    }
-    
-    private var locations: [Location] = [] {
-        didSet {
-            locationsDidChanged?(locations)
-        }
-    }
+    // MARK: - Properties
     
     var hasLocations: Bool {
         return numberOfLocations > 0
     }
     
     var numberOfLocations: Int {
-        return locations.count
+        return _locations.value.count
     }
+    
+    private let _locations = BehaviorRelay<[Location]>(value: [])
+    private let _querying = BehaviorRelay<Bool>(value: false)
+    
+    var locations: Driver<[Location]> { return _locations.asDriver() }
+    var querying: Driver<Bool> { return _querying.asDriver() }
+    
+    // MARK: -
     
     private lazy var geocoder = CLGeocoder()
     
+    private let disposeBag = DisposeBag()
+    
+    init(query: Driver<String>) {
+        query
+            .throttle(0.5)
+            .distinctUntilChanged()
+            .drive(onNext: {[weak self] (addressString) in
+                self?.geocode(addressString: addressString)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    // MARK: - Methods
+    
     func location(at index: Int) -> Location? {
-        guard index < locations.count else { return nil }
-        return locations[index]
+        guard index < _locations.value.count else { return nil }
+        return _locations.value[index]
     }
     
     func viewModelForLocation(at index: Int) -> LocationRepresentable? {
@@ -54,16 +59,16 @@ class AddLocationViewViewModel {
     
     private func geocode(addressString: String?) {
         guard let addressString = addressString, !addressString.isEmpty else {
-            locations = []
+            _locations.accept([])
             return
         }
         
-        querying = true
+        _querying.accept(true)
         
         geocoder.geocodeAddressString(addressString) {[weak self] (placemarks, error) in
             var locations: [Location] = []
             
-            self?.querying = false
+            self?._querying.accept(false)
             
             if let error = error {
                 print("Unable to Forward Geocode Address (\(error)")
@@ -75,7 +80,7 @@ class AddLocationViewViewModel {
                 })
             }
             
-            self?.locations = locations
+            self?._locations.accept(locations)
         }
         
     }
