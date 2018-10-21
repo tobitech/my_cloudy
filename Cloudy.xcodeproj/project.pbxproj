@@ -25,6 +25,7 @@
 		20B70D522178DD90006500CB /* DayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B70D512178DD90006500CB /* DayViewViewModel.swift */; };
 		20E34D2E217C4F6100C55177 /* WeatherDayViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E34D2D217C4F6100C55177 /* WeatherDayViewViewModelTests.swift */; };
 		20E34D31217C577E00C55177 /* AddLocationViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E34D30217C577E00C55177 /* AddLocationViewViewModel.swift */; };
+		54AE0A30C73D275153C5F71C /* Pods_Cloudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DEA41C3D26FA5CE95509E8C /* Pods_Cloudy.framework */; };
 		CC08B9DB1DA206EE00754A85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */; };
 		CC08B9DE1DA20DB400754A85 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */; };
 		CC08B9E11DA2169400754A85 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9E01DA2169400754A85 /* UserDefaults.swift */; };
@@ -49,6 +50,7 @@
 		CC89B44C1D9FEB73006BFD6E /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC89B44B1D9FEB73006BFD6E /* JSONDecodable.swift */; };
 		CC89B4501D9FEC2E006BFD6E /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC89B44F1D9FEC2E006BFD6E /* WeatherData.swift */; };
 		CC89B4521D9FECBE006BFD6E /* WeatherDayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC89B4511D9FECBE006BFD6E /* WeatherDayData.swift */; };
+		F754631EF624C53CF75B221E /* Pods_CloudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DC4534CB2254DFFF64CA75 /* Pods_CloudyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09901EA7C9B0D488C7EA4FF5 /* Pods-Cloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cloudy/Pods-Cloudy.release.xcconfig"; sourceTree = "<group>"; };
+		1DEA41C3D26FA5CE95509E8C /* Pods_Cloudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cloudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		201976AA2178E2EA00545C94 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		201976AC2179E55900545C94 /* WeekViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewViewModel.swift; sourceTree = "<group>"; };
 		201976AF2179EC8500545C94 /* SettingsViewTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTimeViewModel.swift; sourceTree = "<group>"; };
@@ -82,6 +86,9 @@
 		20B70D512178DD90006500CB /* DayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewViewModel.swift; sourceTree = "<group>"; };
 		20E34D2D217C4F6100C55177 /* WeatherDayViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayViewViewModelTests.swift; sourceTree = "<group>"; };
 		20E34D30217C577E00C55177 /* AddLocationViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewViewModel.swift; sourceTree = "<group>"; };
+		5BAF4F518A7FDB74AB654508 /* Pods-CloudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudyTests/Pods-CloudyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		73DC4534CB2254DFFF64CA75 /* Pods_CloudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F33E601F49BEEF38E6513A1 /* Pods-Cloudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cloudy/Pods-Cloudy.debug.xcconfig"; sourceTree = "<group>"; };
 		CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		CC08B9E01DA2169400754A85 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
@@ -108,6 +115,7 @@
 		CC89B44B1D9FEB73006BFD6E /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		CC89B44F1D9FEC2E006BFD6E /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		CC89B4511D9FECBE006BFD6E /* WeatherDayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDayData.swift; sourceTree = "<group>"; };
+		F14761321E99E8E9E6A23B31 /* Pods-CloudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudyTests/Pods-CloudyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F754631EF624C53CF75B221E /* Pods_CloudyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54AE0A30C73D275153C5F71C /* Pods_Cloudy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +230,26 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
+		75DD74DD60A9278F0835937D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DEA41C3D26FA5CE95509E8C /* Pods_Cloudy.framework */,
+				73DC4534CB2254DFFF64CA75 /* Pods_CloudyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99C59840DFB51E55DAB7CD16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F33E601F49BEEF38E6513A1 /* Pods-Cloudy.debug.xcconfig */,
+				09901EA7C9B0D488C7EA4FF5 /* Pods-Cloudy.release.xcconfig */,
+				5BAF4F518A7FDB74AB654508 /* Pods-CloudyTests.debug.xcconfig */,
+				F14761321E99E8E9E6A23B31 /* Pods-CloudyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CC08B9D91DA206C300754A85 /* SettingsViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +338,8 @@
 				CC89B4191D9FE314006BFD6E /* Cloudy */,
 				201976C2217A223E00545C94 /* CloudyTests */,
 				CC89B4181D9FE314006BFD6E /* Products */,
+				99C59840DFB51E55DAB7CD16 /* Pods */,
+				75DD74DD60A9278F0835937D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -443,9 +475,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 201976C8217A223E00545C94 /* Build configuration list for PBXNativeTarget "CloudyTests" */;
 			buildPhases = (
+				71851DAED7A4F8791DAF98A8 /* [CP] Check Pods Manifest.lock */,
 				201976BD217A223E00545C94 /* Sources */,
 				201976BE217A223E00545C94 /* Frameworks */,
 				201976BF217A223E00545C94 /* Resources */,
+				969E3B154B28C963A1F5B62B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -461,9 +495,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC89B4291D9FE314006BFD6E /* Build configuration list for PBXNativeTarget "Cloudy" */;
 			buildPhases = (
+				484CA031E22EFC90E6BFA856 /* [CP] Check Pods Manifest.lock */,
 				CC89B4131D9FE314006BFD6E /* Sources */,
 				CC89B4141D9FE314006BFD6E /* Frameworks */,
 				CC89B4151D9FE314006BFD6E /* Resources */,
+				34E73F5F32E9DDDAD04C7708 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -538,6 +574,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34E73F5F32E9DDDAD04C7708 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Cloudy/Pods-Cloudy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cloudy/Pods-Cloudy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		484CA031E22EFC90E6BFA856 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cloudy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71851DAED7A4F8791DAF98A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		969E3B154B28C963A1F5B62B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CloudyTests/Pods-CloudyTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudyTests/Pods-CloudyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		201976BD217A223E00545C94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -604,6 +721,7 @@
 /* Begin XCBuildConfiguration section */
 		201976C9217A223E00545C94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BAF4F518A7FDB74AB654508 /* Pods-CloudyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -623,7 +741,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tobiomotayo.CloudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloudy.app/Cloudy";
 			};
@@ -631,6 +749,7 @@
 		};
 		201976CA217A223E00545C94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F14761321E99E8E9E6A23B31 /* Pods-CloudyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -648,7 +767,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tobiomotayo.CloudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloudy.app/Cloudy";
 			};
@@ -765,6 +884,7 @@
 		};
 		CC89B42A1D9FE314006BFD6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F33E601F49BEEF38E6513A1 /* Pods-Cloudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -779,6 +899,7 @@
 		};
 		CC89B42B1D9FE314006BFD6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09901EA7C9B0D488C7EA4FF5 /* Pods-Cloudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
