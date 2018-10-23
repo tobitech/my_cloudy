@@ -21,6 +21,7 @@
 		201976D6217A32EE00545C94 /* darksky.json in Resources */ = {isa = PBXBuildFile; fileRef = 201976D5217A32EE00545C94 /* darksky.json */; };
 		201976D8217A337600545C94 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976D7217A337600545C94 /* XCTestCase.swift */; };
 		201976DA217A344F00545C94 /* DayViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201976D9217A344F00545C94 /* DayViewViewModelTests.swift */; };
+		20511EE6217F728000C65BF4 /* AddLocationViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20511EE5217F728000C65BF4 /* AddLocationViewViewModelTests.swift */; };
 		20516A40217BBE240043F679 /* WeekViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20516A3F217BBE240043F679 /* WeekViewViewModelTests.swift */; };
 		20B70D522178DD90006500CB /* DayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B70D512178DD90006500CB /* DayViewViewModel.swift */; };
 		20BEFCA6217D08FC009ECCE5 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BEFCA5217D08FC009ECCE5 /* LocationService.swift */; };
@@ -84,6 +85,7 @@
 		201976D5217A32EE00545C94 /* darksky.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = darksky.json; sourceTree = "<group>"; };
 		201976D7217A337600545C94 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		201976D9217A344F00545C94 /* DayViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewViewModelTests.swift; sourceTree = "<group>"; };
+		20511EE5217F728000C65BF4 /* AddLocationViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewViewModelTests.swift; sourceTree = "<group>"; };
 		20516A3F217BBE240043F679 /* WeekViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewViewModelTests.swift; sourceTree = "<group>"; };
 		20B70D512178DD90006500CB /* DayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewViewModel.swift; sourceTree = "<group>"; };
 		20BEFCA5217D08FC009ECCE5 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				201976CF217A24C000545C94 /* SettingsViewTimeViewModelTests.swift */,
 				201976D1217A2C0500545C94 /* SettingsViewTemperatureViewModelTests.swift */,
 				201976D3217A2EB000545C94 /* SettingsViewUnitsViewModelTests.swift */,
+				20511EE5217F728000C65BF4 /* AddLocationViewViewModelTests.swift */,
 			);
 			path = "Test Cases";
 			sourceTree = "<group>";
@@ -676,6 +679,7 @@
 			files = (
 				201976DA217A344F00545C94 /* DayViewViewModelTests.swift in Sources */,
 				20E34D2E217C4F6100C55177 /* WeatherDayViewViewModelTests.swift in Sources */,
+				20511EE6217F728000C65BF4 /* AddLocationViewViewModelTests.swift in Sources */,
 				201976D4217A2EB000545C94 /* SettingsViewUnitsViewModelTests.swift in Sources */,
 				201976D0217A24C000545C94 /* SettingsViewTimeViewModelTests.swift in Sources */,
 				201976D8217A337600545C94 /* XCTestCase.swift in Sources */,
@@ -757,7 +761,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tobiomotayo.CloudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloudy.app/Cloudy";
 			};
@@ -783,7 +787,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tobiomotayo.CloudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloudy.app/Cloudy";
 			};
@@ -909,7 +913,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoacasts.Cloudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -924,7 +928,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoacasts.Cloudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
